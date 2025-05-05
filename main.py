@@ -47,11 +47,8 @@ def load_user_session(user_id):
 
 @dp.message_handler(commands=["start"])
 async def start(message: types.Message):
-    await message.reply(
-        "👋 Welcome to Squonk Radio V0.3.5!
-"
-        "Use /setup in private chat or /play in group."
-    )
+    await message.reply("👋 Welcome to Squonk Radio V0.3.5!\\nUse /setup in private chat or /play in group.")
+
 
 @dp.message_handler(commands=["setup"])
 async def setup(message: types.Message):
